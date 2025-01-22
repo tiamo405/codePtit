@@ -1,0 +1,9 @@
+# Bỏ qua tất cả các file
+*
+
+# Nhưng cho phép các thư mục (nếu cần thiết)
+!*/
+
+# Chỉ cho phép file .cpp
+!*.cpp
+!*.gitignore
