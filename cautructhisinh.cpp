@@ -1,19 +1,25 @@
-#include<iostream>
-#include <algorithm>
+#include<bits/stdc++.h>
 using namespace std;
-void solve(){
-    string name, dob;
-    float diem1, diem2, diem3;
-    cin >> name >> dob >> diem1 >> diem2 >> diem3;
-    cout << name << " " << dob << " ";
-    printf("%.1f ", diem1 + diem2 + diem3);
+
+struct ThiSinh{
+    string ten, ngaysinh;
+    float d1, d2, d3;
+};
+
+void nhap(ThiSinh &A)
+{
+    getline(cin,A.ten);
+    cin >> A.ngaysinh >> A.d1 >> A.d2 >> A.d3;
 }
+
+void in(ThiSinh A)
+{
+    cout << A.ten << " " << A.ngaysinh << " " << fixed << setprecision(1) << A.d1+A.d2+A.d3 << endl;
+}
+
 int main(){
-    int t=1;
-    // cin >> t;
-    while (t--)
-    {
-        solve();
-        cout << endl;
-    }
+    struct ThiSinh A;
+    nhap(A);
+    in(A);
+    return 0;
 }
