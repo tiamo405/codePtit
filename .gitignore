@@ -6,4 +6,5 @@
 
 # Chỉ cho phép file .cpp
 !*.cpp
+!*.java
 !*.gitignore
