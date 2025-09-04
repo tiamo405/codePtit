@@ -7,5 +7,6 @@
 # Chỉ cho phép file .cpp
 !*.cpp
 !*.java
+!*.py
 !*.gitignore
 thi/
